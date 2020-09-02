@@ -159,7 +159,7 @@
       </div></div>
 
       
-        <a href="https://github.com/johnpaulmaja/LT2.3_Maja" >Github Link here</a>
+        <a href="https://github.com/johnpaulmaja/LT2.3_Maja" style="position:relative; top: 300px; right: 165px;">Github Link here</a>
       </div>
     </body>
     
