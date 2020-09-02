@@ -124,7 +124,7 @@
 
       <div class="logo" style="margin-top: -75px;"></div>
           
-          <p> github: https://github.com/johnpaulmaja/LT2.3_Maja </p>
+          <a href="https://github.com/johnpaulmaja/LT2.3_Maja">Github link here</a>
 
       
 
