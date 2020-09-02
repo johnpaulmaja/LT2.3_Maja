@@ -5,7 +5,7 @@ a { color:white } /* Globally */
 
 a:visited { text-decoration: none; color:black; }
 a:hover { text-decoration: none; color:blue; }
-a:focus { text-decoration: none; color:yellow; }
+a:focus { text-decoration: none; color:brown; }
 a:hover, a:active { text-decoration: none; color:grey }
 
 body {
