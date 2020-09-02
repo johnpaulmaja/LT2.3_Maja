@@ -123,6 +123,8 @@
       </p></h2>
 
       <div class="logo" style="margin-top: -75px;"></div>
+          
+          <p> github: https://github.com/johnpaulmaja/LT2.3_Maja </p>
 
       
 
