@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+a { color:white } /* Globally */
 
+/* Each state */
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:grey }
 
 body {
-    
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper{
@@ -9,113 +17,223 @@ body {
     margin-bottom: 20px;
     margin-left: 200px;
     margin-right: 200px;
-    min-height: 1600px;
+    min-height: 1700px;
     height: auto;
     border:1px solid #000;
     width: 1100px;
     height: 1000px;
     background-color: #ebc8b2;
+    z-index: 2;
  }
  .logo {
     width:150px;
     height:100px;
     margin-left: 475px;
-    margin-top: 15px;
-    outline: 2px solid gray;
-    position: relative; z-index: 1;
 }
-  .logo::before {
-  position: absolute; z-index: 8675309;
-  top: 0; bottom: 0; right: 0; left: 0;
-  background:
-     linear-gradient(to top right,
-        transparent calc(50% - 1px), gray calc(50% - 1px),
-        gray calc(50% + 1px), transparent calc(50% + 1px)),
-     linear-gradient(to bottom right,
-        transparent calc(50% - 1px), gray calc(50% - 1px),
-        gray calc(50% + 1px), transparent calc(50% + 1px)),
-     #FFF9;
-     content: "";
+
+
+/* start burger */
+.logo-size{
+  margin-top: -20%;
 }
+.container > *, .container > *:after, .container > *:before{
+  position: absolute;
+}
+.container > *:after, .container > *:before {
+  content:'';
+}
+.container {
+  position: relative;
+  width: 0%;
+  height: 400px;
+  top: 150px;
+  right: 230px;
+  margin: auto;
+}
+.bread{
+  width: 170px;
+  height: 55px;
+  top: 88px;
+  left: 150px;
+  background: #df7b30;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.bread:after{
+  width: 100%;
+  height: 30px;
+  top: 140px;
+  background: #df7b30;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.sesame{
+  width: 100%;
+  height: 100%;
+  background-image:radial-gradient(#f3d9b1 5%, transparent 6%),
+  radial-gradient(#f3d9b1 5%, transparent 6%);
+  background-size: 40px 30px;
+  background-position: 10px 0px, 30px 15px;
+}
+.meat{
+  width: 160px;
+  height: 25px;
+  top: 200px;
+  left: 155px;
+  background: #492f16;
+  border-radius: 50px;
+}
+.lettuce{
+  width: 150px;
+  height: 15px;
+  top: 183px;
+  left: 160px;
+  background: #88b538;
+  border-radius: 50px;
+}
+.cheese{
+  width: 160px;
+  height: 15px;
+  top: 165px;
+  left: 155px;
+  background: #e6af00;
+  border-radius: 50px;
+}
+.melting-cheese{
+  animation: melt 3s infinite;
+  width: 15px;
+  height: 25px;
+  height: 25px;
+  background: #e6af00;
+  top: 165px;
+  left: 185px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.melting-cheese:after{
+  width: 100%;
+  height: 150%;
+  background: #e6af00;
+  left: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@keyframes melt {
+  0%{
+    height: 0%;
+  }
+  100%{
+    height: 10%;
+  }
+}
+.onion{
+  width: 150px;
+  height: 15px;
+  top: 147px;
+  left: 160px;
+  background: #822e81;
+  border-radius: 50px;
+}
+.onion:before{
+  width: 13%;
+  height: 100%;
+  left: 30px;
+  background: #fff;
+  opacity: 0.4;
+}
+.onion:after{
+  width: 13%;
+  height: 100%;
+  left: 80px;
+  background: #fff;
+  opacity: 0.4;
+}
+/* end burger*/
+
 
   .button1{
     width: 100px;
     height: 65px;
     float: left; 
     margin-left: 30px; 
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     position: relative;
     box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
   }
   .button2{
     width: 100px;
     height: 65px;
     float: left; 
     margin-left: 30px; 
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     position: relative;
     box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
   }
   .button3{
     width: 100px;
     height: 65px;
     float: left; 
     margin-left: 30px; 
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     position: relative;
     box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
   }
   .button4{
     width: 100px;
     height: 65px;
     float: right;  
     margin-right: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     position: relative;
     box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
   }
   .button5{
     width: 100px;
     height: 65px;
     float: right;  
     margin-right: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     position: relative;
     box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
   }
   .button6{
     width: 100px;
     height: 65px;
     float: right;  
     margin-right: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     position: relative;
     box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
-    
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .button1 {
@@ -197,8 +315,6 @@ body {
   top: 0;
   width: 70%;
 }
-
---------
 
 
 .button3 {
@@ -371,37 +487,122 @@ body {
     outline: 2px solid gray;
     position: relative; z-index: 1;
   }
-  .slideshow::before {
-    position: absolute; z-index: 8675309;
-    top: 0; bottom: 0; right: 0; left: 0;
-    background:
-       linear-gradient(to top right,
-          transparent calc(50% - 1px), gray calc(50% - 1px),
-          gray calc(50% + 1px), transparent calc(50% + 1px)),
-       linear-gradient(to bottom right,
-          transparent calc(50% - 1px), gray calc(50% - 1px),
-          gray calc(50% + 1px), transparent calc(50% + 1px)),
-       #FFF9;
-       content: "";
+
+  .leftarrow {
+    cursor: pointer;
+    height: 120px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(.5turn);
+    transition: transform .1s;
+    width: 80px;
+    left: 50px;
+  }
+  .leftarrow-top, .leftarrow-bottom {
+    background-color: #666;
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .leftarrow-top:after, .leftarrow-bottom:after {
+    background-color: #fff;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+  }
+  .leftarrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  .leftarrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  .leftarrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  .leftarrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+  .leftarrow:hover .leftarrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  .leftarrow:hover .leftarrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
+  .leftarrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
   }
 
-  .left-button-slideshow{
-    border:1px solid #000;  
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-left: 20px;
-    margin-top: 115px; 
+  .rightarrow {
+    cursor: pointer;
+    height: 120px;
+    right: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: transform .1s;
+    width: 80px;
+    right: -30px;
   }
-
-  .right-button-slideshow{
-    border:1px solid #000;  
-    width: 50px;
-    height: 50px;
-    float: right;
-    margin-right: 20px;
-    margin-top: 115px; 
+  .rightarrow-top, .rightarrow-bottom {
+    background-color: #666;
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
   }
+  .rightarrow-top:after, .rightarrow-bottom:after {
+    background-color: #fff;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+  }
+  .rightarrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  .rightarrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  .rightarrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  .rightarrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+  .rightarrow:hover .rightarrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  .rightarrow:hover .rightarrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
+  .rightarrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+  
+  
   .dot {
     height: 25px;
     width: 25px;
@@ -454,23 +655,10 @@ body {
     height:530px;
     margin-left: 350px;
     margin-top: 15px;
-    outline: 2px solid gray;
     position: relative; z-index: 1;
     margin-bottom: 150px;
 }
-  .burger-picture::before {
-  position: absolute; z-index: 8675309;
-  top: 0; bottom: 0; right: 0; left: 0;
-  background:
-     linear-gradient(to top right,
-        transparent calc(50% - 1px), gray calc(50% - 1px),
-        gray calc(50% + 1px), transparent calc(50% + 1px)),
-     linear-gradient(to bottom right,
-        transparent calc(50% - 1px), gray calc(50% - 1px),
-        gray calc(50% + 1px), transparent calc(50% + 1px)),
-     #FFF9;
-     content: "";
-}
+
 
 
 
