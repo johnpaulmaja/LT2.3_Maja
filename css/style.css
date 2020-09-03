@@ -543,7 +543,7 @@ body {
     transition-delay: 0s;
   }
   .leftarrow:active {
-    translateX(-50%) translateY(-50%) scaleX(-0.9) scale(0.9);
+    transform: translateX(-50%) translateY(-50%) scaleX(-0.9) scale(0.9);
   }
 
   .rightarrow {
